@@ -567,6 +567,7 @@
                       "animateLoading": true,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
@@ -578,7 +579,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Form",
+                      "text": "Regex Form",
                       "key": "o6gpvoesvo",
                       "isDeprecated": false,
                       "rightColumn": 26,
@@ -598,7 +599,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{add_sms_regex.run(() => showAlert('Data Saved Successfully','success'), () => showAlert('Cannot save data. Pls Check','error'))}}",
+                      "onClick": "{{add_sms_regex.run(() => set_is_done.run(), () => showAlert('Cannot save data. Pls Check','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [],
                       "displayName": "Button",
@@ -1477,7 +1478,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{senderLike.text.length > 3 ? fetch_raw_smses.run({ like: `%${senderLike.text}%`}) : showAlert('Type atleast 3 Characters')}}",
+                      "onClick": "{{senderLike.text.length > 3 ? fetch_raw_smses.run({ likeText: `%${senderLike.text}%`}) : showAlert('Type atlease 3 characters')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
@@ -1604,6 +1605,18 @@
                         },
                         {
                           "key": "primaryColumns.id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.buttonColor"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.borderRadius"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.buttonLabel"
                         }
                       ],
                       "leftColumn": 2,
@@ -1655,6 +1668,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "primaryColumns.customColumn2.onClick"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.onClick"
                         }
                       ],
                       "displayName": "Table",
@@ -1670,6 +1686,9 @@
                       "dynamicTriggerPathList": [
                         {
                           "key": "primaryColumns.customColumn2.onClick"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.onClick"
                         }
                       ],
                       "primaryColumns": {
@@ -1701,8 +1720,8 @@
                           "boxShadow": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                           "customAlias": "",
                           "buttonLabel": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( 'Mktng'))}}",
-                          "buttonVariant": "SECONDARY",
-                          "onClick": "{{set_is_markeitng.run(smsTable.selectedRow.id)}}"
+                          "buttonVariant": "TERTIARY",
+                          "onClick": "{{set_is_markeitng.run({id:smsTable.selectedRow.id})}}"
                         },
                         "smsId": {
                           "allowCellWrapping": false,
@@ -1759,7 +1778,7 @@
                           "originalId": "customColumn3",
                           "id": "customColumn3",
                           "alias": "Id",
-                          "columnType": "text",
+                          "columnType": "button",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -1768,12 +1787,20 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": true,
-                          "label": "id",
+                          "label": "Watch",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                           "buttonStyle": "rgb(3, 179, 101)",
-                          "labelColor": "#FFFFFF"
+                          "labelColor": "#FFFFFF",
+                          "horizontalAlignment": "LEFT",
+                          "buttonColor": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                          "borderRadius": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                          "boxShadow": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                          "customAlias": "",
+                          "buttonLabel": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( 'Watch'))}}",
+                          "onClick": "{{set_is_watch.run({id: smsTable.selectedRow.id})}}",
+                          "buttonVariant": "TERTIARY"
                         },
                         "id": {
                           "allowCellWrapping": false,
@@ -1883,7 +1910,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "this.params.like"
+                "this.params.likeText"
               ],
               "timeoutInMillisecond": 10000
             }

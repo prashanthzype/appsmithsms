@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "set_is_markeitng",
+    "name": "set_is_watch",
     "datasource": {
       "name": "sms_regex",
       "pluginId": "mysql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE `nc_3vr7___raw sms` SET\n    isMarketing = 1, Done = 1\n  WHERE id={{this.params.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "UPDATE `nc_3vr7___raw sms` SET\n    Watch = 1, Done = 1\n  WHERE id={{this.params.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_set_is_markeitng",
+  "id": "Page1_set_is_watch",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_62fb34acb9a10a1266626114"
+  "gitSyncId": "62fa7101b9a10a12666260f1_62fc93a1b9a10a1266626136"
 }
