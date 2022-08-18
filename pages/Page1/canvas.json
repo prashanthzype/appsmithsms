@@ -742,7 +742,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{smsTable.selectedRow.smsId === 'Airtel' ? smsTable.selectedRow.smsId : smsTable.selectedRow.smsId.substring(2)}}"
+                      "defaultText": "{{smsTable.selectedRow.smsId === 'Airtel' ? smsTable.selectedRow.smsId : smsTable.selectedRow.smsId.replace('-','').substring(2)}}"
                     },
                     {
                       "resetFormOnClick": false,
@@ -761,8 +761,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 48,
+                      "bottomRow": 52,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -815,8 +815,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 80,
-                      "bottomRow": 84,
+                      "topRow": 76,
+                      "bottomRow": 80,
                       "parentRowSpace": 10,
                       "labelWidth": "10",
                       "type": "SELECT_WIDGET",
@@ -875,8 +875,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 84,
-                      "bottomRow": 88,
+                      "topRow": 80,
+                      "bottomRow": 84,
                       "parentRowSpace": 10,
                       "labelWidth": "10",
                       "type": "SELECT_WIDGET",
@@ -995,8 +995,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 54,
-                      "bottomRow": 74,
+                      "topRow": 52,
+                      "bottomRow": 72,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1081,8 +1081,8 @@
                       "searchTags": [
                         "boolean"
                       ],
-                      "topRow": 75,
-                      "bottomRow": 79,
+                      "topRow": 72,
+                      "bottomRow": 76,
                       "parentRowSpace": 10,
                       "type": "SWITCH_WIDGET",
                       "alignWidget": "RIGHT",
@@ -1127,8 +1127,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 38,
-                      "bottomRow": 50,
+                      "topRow": 36,
+                      "bottomRow": 48,
                       "parentRowSpace": 10,
                       "labelWidth": "10",
                       "autoFocus": false,
@@ -1342,6 +1342,58 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
                       "defaultText": "{{smsTable.selectedRow.id}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "transactionType",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "Transaction Type",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 84,
+                      "bottomRow": 88,
+                      "parentRowSpace": 10,
+                      "labelWidth": "10",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.7314453125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "{{transaction_types.data}}",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "tsmc5f5c1m",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 56,
+                      "widgetId": "8r7kbaud3f",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "fr631hhkm6",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                     }
                   ],
                   "key": "xuvxwvegnz",
@@ -1897,6 +1949,14 @@
             {
               "id": "Page1_matching_columns",
               "name": "matching_columns",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_transaction_types",
+              "name": "transaction_types",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
