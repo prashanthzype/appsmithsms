@@ -896,10 +896,13 @@
                         },
                         {
                           "key": "isRequired"
+                        },
+                        {
+                          "key": "options"
                         }
                       ],
                       "labelPosition": "Left",
-                      "options": "[\n  {\n    \"label\": \"Credit\",\n    \"value\": \"CREDIT\"\n  },\n  {\n    \"label\": \"Debit\",\n    \"value\": \"DEBIT\"\n  },\n  {\n    \"label\": \"Reminder\",\n    \"value\": \"REMINDER\"\n  },\n\t  {\n    \"label\": \"Bounce\",\n    \"value\": \"BOUNCE\"\n  }\n]",
+                      "options": "{{message_types.data}}",
                       "placeholderText": "Select message type",
                       "isDisabled": false,
                       "key": "opcp741ckz",
@@ -1947,8 +1950,26 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Page1_fetch_raw_smses",
+              "name": "fetch_raw_smses",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.likeText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Page1_matching_columns",
               "name": "matching_columns",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_message_types",
+              "name": "message_types",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -1960,18 +1981,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Page1_fetch_raw_smses",
-              "name": "fetch_raw_smses",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "this.params.likeText"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
