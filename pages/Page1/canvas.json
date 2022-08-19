@@ -1177,7 +1177,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,/g, '').replace(/[\\t\\n\\r]/gm,' ').split(' ').join(' ')}}"
+                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,/g, '').replace(/[\\t\\n\\r]/gm,' ').replace(/  +/g, ' ').split(' ').join(' ')}}"
                     },
                     {
                       "boxShadow": "none",
@@ -1233,7 +1233,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,/g, '').replace(/[\\t\\n\\r]/gm,' ').split(' ').join(' ')}}"
+                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,/g, '').replace(/[\\t\\n\\r]/gm,' ').replace(/  +/g, ' ').split(' ').join(' ')}}"
                     },
                     {
                       "boxShadow": "none",
@@ -1672,6 +1672,9 @@
                         },
                         {
                           "key": "primaryColumns.customColumn3.buttonLabel"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn4.buttonLabel"
                         }
                       ],
                       "leftColumn": 2,
@@ -1718,7 +1721,8 @@
                         "smsId",
                         "sms",
                         "customColumn2",
-                        "customColumn3"
+                        "customColumn3",
+                        "customColumn4"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -1726,6 +1730,9 @@
                         },
                         {
                           "key": "primaryColumns.customColumn3.onClick"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn4.onClick"
                         }
                       ],
                       "displayName": "Table",
@@ -1744,6 +1751,9 @@
                         },
                         {
                           "key": "primaryColumns.customColumn3.onClick"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn4.onClick"
                         }
                       ],
                       "primaryColumns": {
@@ -1882,6 +1892,33 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                           "cellBackground": ""
+                        },
+                        "customColumn4": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "customColumn4",
+                          "id": "customColumn4",
+                          "alias": "customColumn4",
+                          "horizontalAlignment": "LEFT",
+                          "columnType": "button",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "duplicate",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "",
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF",
+                          "customAlias": "",
+                          "buttonLabel": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( 'Action'))}}",
+                          "onClick": "{{set_is_duplicate.run({id: smsTable.selectedRow.id})}}"
                         }
                       },
                       "key": "8s5ajul1a4",
