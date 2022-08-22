@@ -1917,8 +1917,9 @@
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF",
                           "customAlias": "",
-                          "buttonLabel": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( 'Action'))}}",
-                          "onClick": "{{set_is_duplicate.run({id: smsTable.selectedRow.id})}}"
+                          "buttonLabel": "{{smsTable.processedTableData.map((currentRow, currentIndex) => ( 'duplicate'))}}",
+                          "onClick": "{{set_is_duplicate.run({id: smsTable.selectedRow.id})}}",
+                          "buttonVariant": "TERTIARY"
                         }
                       },
                       "key": "8s5ajul1a4",
