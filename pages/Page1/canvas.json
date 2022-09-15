@@ -1988,6 +1988,16 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Page1_fetch_raw_smses",
+              "name": "fetch_raw_smses",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.likeText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Page1_matching_columns",
               "name": "matching_columns",
               "confirmBeforeExecute": false,
@@ -2009,18 +2019,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Page1_fetch_raw_smses",
-              "name": "fetch_raw_smses",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "this.params.likeText"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

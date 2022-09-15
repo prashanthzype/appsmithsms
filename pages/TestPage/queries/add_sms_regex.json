@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "TestPage",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO nc_3vr7___smsRegex (smsSender, smsRegex, sampleSms, discardSms, hasBalance, accountType, messageType, mc1, mc2, mc3, mc4, mc5, mc6, mc7, mc8, dateFormats, transactionType)\n  VALUES ('{{smsSender.text}}', '{{smsRegex.text}}', '{{sampleSms.text}}', {{discardSms.isSwitchedOn ? 1 : 0}}, {{hasBalance.isSwitchedOn ? 1 : 0}}, '{{accountType.selectedOptionValue}}', '{{messageType.selectedOptionValue}}', '{{mc1.selectedOptionValue}}', '{{mc2.selectedOptionValue}}', '{{mc3.selectedOptionValue}}', '{{mc4.selectedOptionValue}}', '{{mc5.selectedOptionValue}}', '{{mc6.selectedOptionValue}}', '{{mc7.selectedOptionValue}}', '{{mc8.selectedOptionValue}}', '{{formatsForDate.selectedOptionValues.join('@')}}', '{{transactionType.selectedOptionValue}}');\n\t\t\t\t\t\n\t\t\t\t\t",
+      "body": "INSERT INTO nc_3vr7___smsRegex (smsSenderId, smsRegex, sampleSms, discardSms, hasBalance, accountType, messageType, mc1, mc2, mc3, mc4, mc5, mc6, mc7, mc8, dateFormats, transactionType)\n  VALUES ('{{smsSenderId.text}}', '{{smsRegex.text}}', '{{sampleSms.text}}', {{discardSms.isSwitchedOn ? 1 : 0}}, {{hasBalance.isSwitchedOn ? 1 : 0}}, '{{accountType.selectedOptionValue}}', '{{messageType.selectedOptionValue}}', '{{mc1.selectedOptionValue}}', '{{mc2.selectedOptionValue}}', '{{mc3.selectedOptionValue}}', '{{mc4.selectedOptionValue}}', '{{mc5.selectedOptionValue}}', '{{mc6.selectedOptionValue}}', '{{mc7.selectedOptionValue}}', '{{mc8.selectedOptionValue}}', '{{formatsForDate.selectedOptionValues.join('@')}}', '{{transactionType.selectedOptionValue}}');\n\t\t\t\t\t\n\t\t\t\t\t",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -50,7 +50,7 @@
       "messageType.selectedOptionValue",
       "sampleSms.text",
       "smsRegex.text",
-      "smsSender.text",
+      "smsSenderId.text",
       "transactionType.selectedOptionValue"
     ],
     "userSetOnLoad": false,
@@ -58,7 +58,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_add_sms_regex",
+  "id": "TestPage_add_sms_regex",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_62fbae7ab9a10a126662611e"
+  "gitSyncId": "62fa7101b9a10a12666260f1_63203ddcbb192c5e18e196fa"
 }
