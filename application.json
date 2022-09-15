@@ -15,6 +15,10 @@
     {
       "id": "TestPage",
       "isDefault": false
+    },
+    {
+      "id": "Manage Duplicates",
+      "isDefault": false
     }
   ],
   "viewMode": false,

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "fetch_raw_smses",
+    "name": "distinct_sms_sender",
     "datasource": {
       "name": "sms_regex",
       "pluginId": "mysql-plugin",
@@ -13,36 +13,30 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Manage Duplicates",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT id as id, `Sms Id` as smsId, SMS as sms FROM `nc_3vr7___raw sms` WHERE (Done IS NULL OR Done<>1) and (isMarketing IS NULL OR isMarketing <> 1) and (Watch IS NULL or Watch <> 1) and (duplicate is NULL OR duplicate <> 1) AND \n(`Sms Id` like '{{this.params.likeText}}');",
+      "body": "SELECT distinct(smsSender) FROM nc_3vr7___smsRegex order by smsSender;",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "this.params.likeText"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_fetch_raw_smses",
+  "id": "Manage Duplicates_distinct_sms_sender",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_62fa7205b9a10a12666260fa"
+  "gitSyncId": "62fa7101b9a10a12666260f1_6322f2f2bb192c5e18e19790"
 }

@@ -429,7 +429,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.updated_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "2022-09-10T06:37:54Z",
+                      "sourceData": "2022-09-15T08:13:11Z",
                       "isCustomField": false,
                       "accessor": "updated_at",
                       "identifier": "updated_at",
@@ -473,7 +473,7 @@
                       "dataType": "number",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Tested))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Number Input",
-                      "sourceData": 0,
+                      "sourceData": 1,
                       "isCustomField": false,
                       "accessor": "Tested",
                       "identifier": "Tested",
@@ -489,6 +489,50 @@
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
                       "label": "Tested"
+                    },
+                    "Failed": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Failed))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Number Input",
+                      "sourceData": 1,
+                      "isCustomField": false,
+                      "accessor": "Failed",
+                      "identifier": "Failed",
+                      "position": 21,
+                      "originalIdentifier": "Failed",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Failed"
+                    },
+                    "Success": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Success))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Number Input",
+                      "sourceData": 0,
+                      "isCustomField": false,
+                      "accessor": "Success",
+                      "identifier": "Success",
+                      "position": 22,
+                      "originalIdentifier": "Success",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Success"
                     }
                   },
                   "dataType": "object",
@@ -511,8 +555,10 @@
                     "dateFormats": "DD-MMM-YY",
                     "transactionType": "TRANSFER",
                     "created_at": "2022-09-10T04:52:20Z",
-                    "updated_at": "2022-09-10T06:37:54Z",
-                    "Tested": 0,
+                    "updated_at": "2022-09-15T08:13:11Z",
+                    "Tested": 1,
+                    "Failed": 1,
+                    "Success": 0,
                     "customColumn2": ""
                   },
                   "isCustomField": false,
@@ -803,6 +849,24 @@
                 },
                 {
                   "key": "schema.__root_schema__.children.Tested.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Failed.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Failed.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Failed.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Success.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Success.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Success.accentColor"
                 }
               ],
               "borderWidth": "0",
@@ -984,6 +1048,8 @@
                         "created_at",
                         "updated_at",
                         "Tested",
+                        "Failed",
+                        "Success",
                         "customColumn2"
                       ],
                       "dynamicPropertyPathList": [
@@ -1123,6 +1189,12 @@
                         },
                         {
                           "key": "primaryColumns.Tested.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Failed.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Success.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -1546,6 +1618,44 @@
                           "isDerived": false,
                           "label": "Tested",
                           "computedValue": "{{smsTable.sanitizedTableData.map((currentRow) => ( currentRow.Tested))}}",
+                          "cellBackground": ""
+                        },
+                        "Failed": {
+                          "index": 21,
+                          "width": 150,
+                          "id": "Failed",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Failed",
+                          "computedValue": "{{smsTable.sanitizedTableData.map((currentRow) => ( currentRow.Failed))}}",
+                          "cellBackground": ""
+                        },
+                        "Success": {
+                          "index": 22,
+                          "width": 150,
+                          "id": "Success",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Success",
+                          "computedValue": "{{smsTable.sanitizedTableData.map((currentRow) => ( currentRow.Success))}}",
                           "cellBackground": ""
                         }
                       },
