@@ -19,6 +19,10 @@
     {
       "id": "Manage Duplicates",
       "isDefault": false
+    },
+    {
+      "id": "CorrectPage",
+      "isDefault": false
     }
   ],
   "viewMode": false,

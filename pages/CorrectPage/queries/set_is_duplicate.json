@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "SelectQuery",
+    "name": "set_is_duplicate",
     "datasource": {
       "name": "sms_regex",
       "pluginId": "mysql-plugin",
@@ -13,19 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page3",
+    "pageId": "CorrectPage",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM nc_3vr7___smsRegex\nWHERE smsSender like '%{{smsTable.searchText || \"\"}}%' and Failed = 1\nORDER BY {{smsTable.sortOrder.column || 'id'}} {{smsTable.sortOrder.order || \"ASC\"}}\nLIMIT {{smsTable.pageSize}}\nOFFSET {{(smsTable.pageNo - 1) * smsTable.pageSize}};",
+      "body": "UPDATE `nc_3vr7___raw sms` SET\n    duplicate = 1, Done = 1\n  WHERE id={{this.params.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,18 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(smsTable.pageNo - 1) * smsTable.pageSize",
-      "smsTable.pageSize",
-      "smsTable.searchText || \"\"",
-      "smsTable.sortOrder.column || 'id'",
-      "smsTable.sortOrder.order || \"ASC\""
+      "this.params.id"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page3_SelectQuery",
+  "id": "CorrectPage_set_is_duplicate",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_631f2e2ebb192c5e18e196b5"
+  "gitSyncId": "62fa7101b9a10a12666260f1_632333b9bb192c5e18e197b2"
 }
