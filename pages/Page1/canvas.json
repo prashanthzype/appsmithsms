@@ -822,7 +822,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 12.205078125,
                       "dynamicTriggerPathList": [],
@@ -882,7 +882,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 12.205078125,
                       "dynamicTriggerPathList": [],
@@ -1177,7 +1177,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,/g, '').replace(/[\\t\\n\\r]/gm,' ').replace(/  +/g, ' ').split(' ').join(' ')}}"
+                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,|!|'|\"/g, '').replace(/[\\t\\n\\r]/gm,' ').replace(/  +/g, ' ').split(' ').join(' ')}}"
                     },
                     {
                       "boxShadow": "none",
@@ -1233,7 +1233,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,/g, '').replace(/[\\t\\n\\r]/gm,' ').replace(/  +/g, ' ').split(' ').join(' ')}}"
+                      "defaultText": "{{smsTable.selectedRow.sms.replace(/\\(|\\)|,|!|'|\"/g, '').replace(/[\\t\\n\\r]/gm,' ').replace(/  +/g, ' ').split(' ').join(' ')}}"
                     },
                     {
                       "boxShadow": "none",
