@@ -1,19 +1,15 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Create Regex",
       "isDefault": true
     },
     {
-      "id": "Page2",
+      "id": "Monitor Regex",
       "isDefault": false
     },
     {
-      "id": "Page3",
-      "isDefault": false
-    },
-    {
-      "id": "TestPage",
+      "id": "Failed Regex Edits",
       "isDefault": false
     },
     {
@@ -22,6 +18,18 @@
     },
     {
       "id": "CorrectPage",
+      "isDefault": false
+    },
+    {
+      "id": "Manage txn description",
+      "isDefault": false
+    },
+    {
+      "id": "Correct Valid Regexes",
+      "isDefault": false
+    },
+    {
+      "id": "Test Regex",
       "isDefault": false
     }
   ],

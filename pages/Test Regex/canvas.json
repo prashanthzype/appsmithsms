@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "CorrectPage",
-    "slug": "correctpage",
+    "name": "Test Regex",
+    "slug": "test-regex",
     "layouts": [
       {
         "viewMode": false,
@@ -1082,9 +1082,6 @@
                         },
                         {
                           "key": "primaryColumns.Success.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.isDuplicate.computedValue"
                         }
                       ],
                       "leftColumn": 2,
@@ -1150,7 +1147,6 @@
                         "Tested",
                         "Failed",
                         "Success",
-                        "isDuplicate",
                         "customColumn2",
                         "customColumn3",
                         "customColumn4"
@@ -1875,32 +1871,6 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{IncorrectRegexTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Success\"]))}}",
                           "cellBackground": ""
-                        },
-                        "isDuplicate": {
-                          "allowCellWrapping": false,
-                          "index": 23,
-                          "width": 150,
-                          "originalId": "isDuplicate",
-                          "id": "isDuplicate",
-                          "alias": "isDuplicate",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "isDuplicate",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{IncorrectRegexTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isDuplicate\"]))}}",
-                          "cellBackground": ""
                         }
                       },
                       "key": "8s5ajul1a4",
@@ -1908,7 +1878,7 @@
                       "rightColumn": 62,
                       "textSize": "0.875rem",
                       "widgetId": "bdykcy3ecj",
-                      "tableData": "{{error_regex.data}}",
+                      "tableData": "{{untested_regex.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "825k9k7d7h",
@@ -1953,8 +1923,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "CorrectPage_error_regex",
-              "name": "error_regex",
+              "id": "Test Regex_untested_regex",
+              "name": "untested_regex",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -1963,7 +1933,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "CorrectPage",
+        "id": "Test Regex",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -1974,5 +1944,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_632333b8bb192c5e18e19799"
+  "gitSyncId": "62fa7101b9a10a12666260f1_63296014bb192c5e18e19892"
 }
