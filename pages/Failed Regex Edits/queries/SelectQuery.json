@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM nc_3vr7___smsRegex\nWHERE smsSender like '%{{smsTable.searchText || \"\"}}%' and Failed = 1\nORDER BY {{smsTable.sortOrder.column || 'id'}} {{smsTable.sortOrder.order || \"ASC\"}}\nLIMIT {{smsTable.pageSize}}\nOFFSET {{(smsTable.pageNo - 1) * smsTable.pageSize}};",
+      "body": "SELECT * FROM nc_3vr7___smsRegex\nWHERE smsSender like '%{{smsSenderSelect.selectedOptionValue}}%' and Failed = 1\nORDER BY {{smsTable.sortOrder.column || 'id'}} {{smsTable.sortOrder.order || \"ASC\"}}\nLIMIT {{smsTable.pageSize}}\nOFFSET {{(smsTable.pageNo - 1) * smsTable.pageSize}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -36,8 +36,8 @@
     "messages": [],
     "jsonPathKeys": [
       "(smsTable.pageNo - 1) * smsTable.pageSize",
+      "smsSenderSelect.selectedOptionValue",
       "smsTable.pageSize",
-      "smsTable.searchText || \"\"",
       "smsTable.sortOrder.column || 'id'",
       "smsTable.sortOrder.order || \"ASC\""
     ],

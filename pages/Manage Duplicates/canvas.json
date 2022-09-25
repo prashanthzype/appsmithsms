@@ -91,6 +91,9 @@
                 },
                 {
                   "key": "primaryColumns.Success.computedValue"
+                },
+                {
+                  "key": "primaryColumns.sampleSms.computedValue"
                 }
               ],
               "leftColumn": 4,
@@ -130,11 +133,12 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table1",
+              "widgetName": "duplicatesTable",
               "defaultPageSize": 0,
               "columnOrder": [
                 "id",
                 "smsSender",
+                "sampleSms",
                 "smsRegex",
                 "isDuplicate",
                 "Success"
@@ -146,9 +150,10 @@
                 "task": 245,
                 "step": 62,
                 "status": 75,
-                "smsRegex": 863,
+                "smsRegex": 438,
                 "id": 69,
-                "smsSender": 69
+                "smsSender": 69,
+                "sampleSms": 344
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -177,7 +182,7 @@
                   "label": "id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
+                  "computedValue": "{{duplicatesTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
                 },
                 "smsSender": {
                   "allowCellWrapping": false,
@@ -201,7 +206,7 @@
                   "label": "smsSender",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"smsSender\"]))}}"
+                  "computedValue": "{{duplicatesTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"smsSender\"]))}}"
                 },
                 "smsRegex": {
                   "allowCellWrapping": true,
@@ -225,7 +230,7 @@
                   "label": "smsRegex",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"smsRegex\"]))}}"
+                  "computedValue": "{{duplicatesTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"smsRegex\"]))}}"
                 },
                 "isDuplicate": {
                   "allowCellWrapping": false,
@@ -250,7 +255,7 @@
                   "label": "isDuplicate",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isDuplicate\"]))}}",
+                  "computedValue": "{{duplicatesTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isDuplicate\"]))}}",
                   "cellBackground": ""
                 },
                 "Success": {
@@ -276,7 +281,33 @@
                   "label": "Success",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Success\"]))}}",
+                  "computedValue": "{{duplicatesTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Success\"]))}}",
+                  "cellBackground": ""
+                },
+                "sampleSms": {
+                  "allowCellWrapping": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "sampleSms",
+                  "id": "sampleSms",
+                  "alias": "sampleSms",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "sampleSms",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{duplicatesTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sampleSms\"]))}}",
                   "cellBackground": ""
                 }
               },
@@ -310,8 +341,8 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 6,
-              "bottomRow": 10,
+              "topRow": 3,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
@@ -377,13 +408,124 @@
                 "click",
                 "submit"
               ],
-              "topRow": 7,
-              "bottomRow": 11,
+              "topRow": 3,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 18.3125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 24,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Refresh",
+              "isDisabled": false,
+              "key": "vw2g69st0q",
+              "isDeprecated": false,
+              "rightColumn": 31,
+              "isDefaultClickDisabled": true,
+              "iconName": "refresh",
+              "widgetId": "mdcxqerhg2",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "duplicateRegex",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 1,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 15.859375,
+              "dynamicTriggerPathList": [],
+              "resetOnSubmit": true,
+              "leftColumn": 41,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "dz1t1pg2k2",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 54,
+              "widgetId": "tjh8f4tfne",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "regex id",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "iconAlign": "left",
+              "defaultText": ""
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button2",
+              "onClick": "{{\n(function(){\n\tmark_as_duplicate.run()\n\tdistinct_regexes.run()\n\tduplicateRegex.value = ''\n}())\n}}\n",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 1,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 15.859375,
               "dynamicTriggerPathList": [
                 {
                   "key": "onClick"
@@ -398,14 +540,13 @@
                   "key": "borderRadius"
                 }
               ],
-              "text": "Refresh",
+              "text": "Duplicate",
               "isDisabled": false,
-              "key": "vw2g69st0q",
+              "key": "428mf9wmad",
               "isDeprecated": false,
-              "rightColumn": 62,
+              "rightColumn": 61,
               "isDefaultClickDisabled": true,
-              "iconName": "refresh",
-              "widgetId": "mdcxqerhg2",
+              "widgetId": "k0oabpl1fq",
               "isVisible": true,
               "recaptchaType": "V3",
               "version": 1,
@@ -415,7 +556,115 @@
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "notDuplicateRegex",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 15.859375,
+              "dynamicTriggerPathList": [],
+              "resetOnSubmit": true,
+              "leftColumn": 41,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "dz1t1pg2k2",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 54,
+              "widgetId": "d2djjew7fd",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Regex Id",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "iconAlign": "left",
+              "defaultText": ""
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button3",
+              "onClick": "{{\n(function(){\n\tunmark_as_duplicate.run()\n\tdistinct_regexes.run()\n\tnotDuplicateRegex.value = ''\n}())\n}}\n",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 15.859375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 55,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Not Duplicate",
+              "isDisabled": false,
+              "key": "428mf9wmad",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "isDefaultClickDisabled": true,
+              "widgetId": "9v9kow60c8",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }
           ]

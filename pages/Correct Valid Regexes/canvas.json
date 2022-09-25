@@ -101,6 +101,7 @@
                       "dataType": "number",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.discardSms))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Number Input",
+                      "sourceData": 0,
                       "isCustomField": false,
                       "accessor": "discardSms",
                       "identifier": "discardSms",
@@ -115,14 +116,14 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Discard Sms",
-                      "sourceData": 0
+                      "label": "Discard Sms"
                     },
                     "hasBalance": {
                       "children": {},
                       "dataType": "number",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.hasBalance))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Number Input",
+                      "sourceData": 1,
                       "isCustomField": false,
                       "accessor": "hasBalance",
                       "identifier": "hasBalance",
@@ -137,8 +138,7 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Has Balance",
-                      "sourceData": 1
+                      "label": "Has Balance"
                     },
                     "accountType": {
                       "children": {},
@@ -644,7 +644,7 @@
                   "key": "onSubmit"
                 }
               ],
-              "leftColumn": 50,
+              "leftColumn": 40,
               "dynamicBindingPathList": [
                 {
                   "key": "schema.__root_schema__.defaultValue"

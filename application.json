@@ -9,7 +9,7 @@
       "isDefault": false
     },
     {
-      "id": "Failed Regex Edits",
+      "id": "Correct Valid Regexes",
       "isDefault": false
     },
     {
@@ -17,19 +17,23 @@
       "isDefault": false
     },
     {
-      "id": "CorrectPage",
-      "isDefault": false
-    },
-    {
       "id": "Manage txn description",
       "isDefault": false
     },
     {
-      "id": "Correct Valid Regexes",
+      "id": "CorrectPage",
       "isDefault": false
     },
     {
       "id": "Test Regex",
+      "isDefault": false
+    },
+    {
+      "id": "Failed Regex Edits",
+      "isDefault": false
+    },
+    {
+      "id": "Correct Regex by regex Id",
       "isDefault": false
     }
   ],

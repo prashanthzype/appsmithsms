@@ -1082,6 +1082,9 @@
                         },
                         {
                           "key": "primaryColumns.Success.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.isDuplicate.computedValue"
                         }
                       ],
                       "leftColumn": 2,
@@ -1147,6 +1150,7 @@
                         "Tested",
                         "Failed",
                         "Success",
+                        "isDuplicate",
                         "customColumn2",
                         "customColumn3",
                         "customColumn4"
@@ -1167,7 +1171,9 @@
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "smsRegex": 81,
+                        "sampleSms": 323
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -1870,6 +1876,32 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{IncorrectRegexTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Success\"]))}}",
+                          "cellBackground": ""
+                        },
+                        "isDuplicate": {
+                          "allowCellWrapping": false,
+                          "index": 23,
+                          "width": 150,
+                          "originalId": "isDuplicate",
+                          "id": "isDuplicate",
+                          "alias": "isDuplicate",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "isDuplicate",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{IncorrectRegexTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isDuplicate\"]))}}",
                           "cellBackground": ""
                         }
                       },
