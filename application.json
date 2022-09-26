@@ -35,6 +35,10 @@
     {
       "id": "Correct Regex by regex Id",
       "isDefault": false
+    },
+    {
+      "id": "Reset parsed smses",
+      "isDefault": false
     }
   ],
   "viewMode": false,

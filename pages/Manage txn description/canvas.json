@@ -80,6 +80,7 @@
                       "widgetName": "data_table",
                       "onSort": "{{SelectQuery.run()}}",
                       "columnOrder": [
+                        "smsRegexId",
                         "smsSender",
                         "sms",
                         "smsRegex",
@@ -91,7 +92,6 @@
                         "mc6",
                         "mc7",
                         "mc8",
-                        "smsRegexId",
                         "id",
                         "created_at",
                         "updated_at"
@@ -514,11 +514,12 @@
                         "status": 75,
                         "sms": 132,
                         "mc4": 327,
-                        "mc1": 105,
+                        "mc1": 149,
                         "mc2": 109,
                         "mc3": 336,
-                        "smsRegex": 229,
-                        "smsSender": 107
+                        "smsRegex": 337,
+                        "smsSender": 107,
+                        "smsRegexId": 60
                       }
                     },
                     {
