@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Manage txn description",
-    "slug": "manage-txn-description",
+    "name": "Page1",
+    "slug": "page1",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 980,
+          "bottomRow": 910,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -27,6 +27,403 @@
           "leftColumn": 0,
           "children": [
             {
+              "schema": {
+                "__root_schema__": {
+                  "children": {
+                    "name_of_bank": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name_of_bank))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "Abhyudaya Co-op Bank Ltd",
+                      "isCustomField": false,
+                      "accessor": "name_of_bank",
+                      "identifier": "name_of_bank",
+                      "position": 0,
+                      "originalIdentifier": "name_of_bank",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Name Of Bank"
+                    },
+                    "img_url": {
+                      "children": {},
+                      "dataType": "null",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.img_url))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "isCustomField": false,
+                      "accessor": "img_url",
+                      "identifier": "img_url",
+                      "position": 1,
+                      "originalIdentifier": "img_url",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Img Url"
+                    },
+                    "created_date": {
+                      "children": {},
+                      "dataType": "null",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.created_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "isCustomField": false,
+                      "accessor": "created_date",
+                      "identifier": "created_date",
+                      "position": 2,
+                      "originalIdentifier": "created_date",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Created Date"
+                    },
+                    "updated_date": {
+                      "children": {},
+                      "dataType": "null",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.updated_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "isCustomField": false,
+                      "accessor": "updated_date",
+                      "identifier": "updated_date",
+                      "position": 3,
+                      "originalIdentifier": "updated_date",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Updated Date"
+                    },
+                    "cashfree_netbanking_code": {
+                      "children": {},
+                      "dataType": "null",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.cashfree_netbanking_code))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "isCustomField": false,
+                      "accessor": "cashfree_netbanking_code",
+                      "identifier": "cashfree_netbanking_code",
+                      "position": 4,
+                      "originalIdentifier": "cashfree_netbanking_code",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Cashfree Netbanking Code"
+                    },
+                    "cashfree_debitcard_code": {
+                      "children": {},
+                      "dataType": "null",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.cashfree_debitcard_code))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "isCustomField": false,
+                      "accessor": "cashfree_debitcard_code",
+                      "identifier": "cashfree_debitcard_code",
+                      "position": 5,
+                      "originalIdentifier": "cashfree_debitcard_code",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Cashfree Debitcard Code"
+                    }
+                  },
+                  "dataType": "object",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "fieldType": "Object",
+                  "sourceData": {
+                    "name_of_bank": "Abhyudaya Co-op Bank Ltd"
+                  },
+                  "isCustomField": false,
+                  "accessor": "__root_schema__",
+                  "identifier": "__root_schema__",
+                  "position": -1,
+                  "originalIdentifier": "__root_schema__",
+                  "boxShadow": "none",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "cellBoxShadow": "none",
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "labelTextSize": "0.875rem",
+                  "label": ""
+                }
+              },
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "update_form",
+              "submitButtonStyles": {
+                "boxShadow": "none",
+                "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "buttonVariant": "PRIMARY"
+              },
+              "borderColor": "#2E3D4955",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.col5.defaultValue"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "schema.__root_schema__.children.col4.defaultValue"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "displayName": "JSON Form",
+              "iconSVG": "/static/media/icon.6bacf7df.svg",
+              "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+              "topRow": 0,
+              "bottomRow": 89,
+              "fieldLimitExceeded": false,
+              "parentRowSpace": 10,
+              "title": "Update Row id: {{data_table.selectedRow.id}}",
+              "type": "JSON_FORM_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 16.3125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "leftColumn": 39,
+              "dynamicBindingPathList": [
+                {
+                  "key": "schema.__root_schema__.defaultValue"
+                },
+                {
+                  "key": "sourceData"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "schema.__root_schema__.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.cellBorderRadius"
+                },
+                {
+                  "key": "title"
+                },
+                {
+                  "key": "submitButtonStyles.buttonColor"
+                },
+                {
+                  "key": "submitButtonStyles.borderRadius"
+                },
+                {
+                  "key": "resetButtonStyles.borderRadius"
+                },
+                {
+                  "key": "resetButtonStyles.buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "schema.__root_schema__.children.name_of_bank.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.name_of_bank.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.name_of_bank.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.img_url.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.img_url.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.img_url.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.created_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.created_date.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.created_date.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.updated_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.updated_date.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.updated_date.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.cashfree_netbanking_code.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.cashfree_netbanking_code.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.cashfree_netbanking_code.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.cashfree_debitcard_code.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.cashfree_debitcard_code.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.cashfree_debitcard_code.accentColor"
+                }
+              ],
+              "borderWidth": "0",
+              "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
+              "showReset": true,
+              "resetButtonLabel": "Reset",
+              "key": "h9l9ozr8op",
+              "labelTextSize": "0.875rem",
+              "backgroundColor": "#fff",
+              "rightColumn": 64,
+              "autoGenerateForm": true,
+              "widgetId": "6g4ewsx2v0",
+              "resetButtonStyles": {
+                "boxShadow": "none",
+                "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "buttonVariant": "SECONDARY"
+              },
+              "isVisible": "{{!!data_table.selectedRow.id}}",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "scrollContents": true,
+              "fixedFooter": true,
+              "submitButtonLabel": "Update",
+              "childStylesheet": {
+                "CHECKBOX": {
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "ARRAY": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBoxShadow": "none"
+                },
+                "CURRENCY_INPUT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "DATEPICKER": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "PHONE_NUMBER_INPUT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "OBJECT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBoxShadow": "none"
+                },
+                "MULTISELECT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "SELECT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "NUMBER_INPUT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "PASSWORD_INPUT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "EMAIL_INPUT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "RADIO_GROUP": {
+                  "boxShadow": "none",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "SWITCH": {
+                  "boxShadow": "none",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "TEXT_INPUT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                },
+                "MULTILINE_TEXT_INPUT": {
+                  "boxShadow": "none",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+                }
+              },
+              "disabledWhenInvalid": true,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            },
+            {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "widgetName": "Container1",
               "borderColor": "#fff",
@@ -35,8 +432,8 @@
                   "key": "borderRadius"
                 }
               ],
-              "topRow": 7,
-              "bottomRow": 96,
+              "topRow": 0,
+              "bottomRow": 89,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "parentColumnSpace": 19.75,
@@ -80,28 +477,28 @@
                       "widgetName": "data_table",
                       "onSort": "{{SelectQuery.run()}}",
                       "columnOrder": [
-                        "smsRegexId",
-                        "smsSender",
-                        "sms",
-                        "smsRegex",
-                        "mc1",
-                        "mc2",
-                        "mc3",
-                        "mc4",
-                        "mc5",
-                        "mc6",
-                        "mc7",
-                        "mc8",
                         "id",
-                        "created_at",
-                        "updated_at"
+                        "name_of_bank",
+                        "img_url",
+                        "created_date",
+                        "updated_date",
+                        "cashfree_netbanking_code",
+                        "cashfree_debitcard_code",
+                        "customColumn1"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onPageChange"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.borderRadius"
+                        }
+                      ],
                       "isVisibleDownload": true,
-                      "topRow": 6,
+                      "topRow": 5,
                       "bottomRow": 87,
                       "parentRowSpace": 10,
-                      "onPageChange": "",
+                      "onPageChange": "{{SelectQuery.run()}}",
                       "isSortable": true,
                       "type": "TABLE_WIDGET",
                       "defaultSelectedRow": "0",
@@ -112,6 +509,9 @@
                           "key": "onPageChange"
                         },
                         {
+                          "key": "primaryColumns.customColumn1.onClick"
+                        },
+                        {
                           "key": "onSearchTextChanged"
                         },
                         {
@@ -119,6 +519,9 @@
                         }
                       ],
                       "dynamicBindingPathList": [
+                        {
+                          "key": "primaryColumns.customColumn1.buttonLabel"
+                        },
                         {
                           "key": "tableData"
                         },
@@ -132,283 +535,57 @@
                           "key": "boxShadow"
                         },
                         {
-                          "key": "primaryColumns.smsSender.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.sms.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.smsRegex.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc1.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc2.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc3.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc4.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc5.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc6.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc7.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.mc8.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.smsRegexId.computedValue"
+                          "key": "primaryColumns.customColumn1.borderRadius"
                         },
                         {
                           "key": "primaryColumns.id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.created_at.computedValue"
+                          "key": "primaryColumns.name_of_bank.computedValue"
                         },
                         {
-                          "key": "primaryColumns.updated_at.computedValue"
+                          "key": "primaryColumns.img_url.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.created_date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.updated_date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.cashfree_netbanking_code.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.cashfree_debitcard_code.computedValue"
                         }
                       ],
                       "leftColumn": 0,
                       "primaryColumns": {
-                        "smsSender": {
-                          "index": 0,
-                          "width": 150,
-                          "id": "smsSender",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
+                        "customColumn1": {
                           "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "smsSender",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.smsSender))}}",
-                          "cellBackground": ""
-                        },
-                        "sms": {
-                          "index": 1,
-                          "width": 150,
-                          "id": "sms",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
+                          "boxShadow": "none",
+                          "isDerived": true,
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.customColumn1))}}",
+                          "onClick": "{{showModal('Delete_Modal')}}",
                           "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "sms",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.sms))}}",
-                          "cellBackground": ""
-                        },
-                        "smsRegex": {
-                          "index": 2,
-                          "width": 150,
-                          "id": "smsRegex",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "smsRegex",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.smsRegex))}}",
-                          "cellBackground": ""
-                        },
-                        "mc1": {
-                          "index": 3,
-                          "width": 150,
-                          "id": "mc1",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc1",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc1))}}",
-                          "cellBackground": ""
-                        },
-                        "mc2": {
-                          "index": 4,
-                          "width": 150,
-                          "id": "mc2",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc2",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc2))}}",
-                          "cellBackground": ""
-                        },
-                        "mc3": {
-                          "index": 5,
-                          "width": 150,
-                          "id": "mc3",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc3",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc3))}}",
-                          "cellBackground": ""
-                        },
-                        "mc4": {
-                          "index": 6,
-                          "width": 150,
-                          "id": "mc4",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc4",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc4))}}",
-                          "cellBackground": ""
-                        },
-                        "mc5": {
+                          "buttonColor": "#DD4B34",
                           "index": 7,
-                          "width": 150,
-                          "id": "mc5",
+                          "isVisible": true,
+                          "label": "Delete",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => { return 'Delete'})}}",
+                          "columnType": "button",
                           "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
+                          "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                          "width": 150,
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "id": "customColumn1",
                           "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc5",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc5))}}",
-                          "cellBackground": ""
-                        },
-                        "mc6": {
-                          "index": 8,
-                          "width": 150,
-                          "id": "mc6",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc6",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc6))}}",
-                          "cellBackground": ""
-                        },
-                        "mc7": {
-                          "index": 9,
-                          "width": 150,
-                          "id": "mc7",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc7",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc7))}}",
-                          "cellBackground": ""
-                        },
-                        "mc8": {
-                          "index": 10,
-                          "width": 150,
-                          "id": "mc8",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "mc8",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.mc8))}}",
-                          "cellBackground": ""
-                        },
-                        "smsRegexId": {
-                          "index": 11,
-                          "width": 150,
-                          "id": "smsRegexId",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "smsRegexId",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.smsRegexId))}}",
-                          "cellBackground": ""
+                          "buttonLabelColor": "#FFFFFF",
+                          "verticalAlignment": "CENTER"
                         },
                         "id": {
-                          "index": 12,
+                          "index": 0,
                           "width": 150,
                           "id": "id",
                           "horizontalAlignment": "LEFT",
@@ -426,10 +603,10 @@
                           "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
                           "cellBackground": ""
                         },
-                        "created_at": {
-                          "index": 13,
+                        "name_of_bank": {
+                          "index": 1,
                           "width": 150,
-                          "id": "created_at",
+                          "id": "name_of_bank",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -437,18 +614,18 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "created_at",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.created_at))}}",
+                          "label": "name_of_bank",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.name_of_bank))}}",
                           "cellBackground": ""
                         },
-                        "updated_at": {
-                          "index": 14,
+                        "img_url": {
+                          "index": 2,
                           "width": 150,
-                          "id": "updated_at",
+                          "id": "img_url",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -456,17 +633,115 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "updated_at",
-                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.updated_at))}}",
+                          "label": "img_url",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.img_url))}}",
+                          "cellBackground": ""
+                        },
+                        "created_date": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "created_date",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "created_date",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.created_date))}}",
+                          "cellBackground": ""
+                        },
+                        "updated_date": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "updated_date",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "updated_date",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.updated_date))}}",
+                          "cellBackground": ""
+                        },
+                        "cashfree_netbanking_code": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "cashfree_netbanking_code",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "cashfree_netbanking_code",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.cashfree_netbanking_code))}}",
+                          "cellBackground": ""
+                        },
+                        "cashfree_debitcard_code": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "cashfree_debitcard_code",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "cashfree_debitcard_code",
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.cashfree_debitcard_code))}}",
                           "cellBackground": ""
                         }
                       },
                       "delimiter": ",",
-                      "derivedColumns": {},
+                      "derivedColumns": {
+                        "customColumn1": {
+                          "boxShadow": "none",
+                          "isDerived": true,
+                          "computedValue": "",
+                          "onClick": "{{DeleteQuery.run()}}",
+                          "textSize": "0.875rem",
+                          "buttonStyle": "#DD4B34",
+                          "index": 7,
+                          "isVisible": true,
+                          "label": "customColumn1",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => { return 'Delete'})}}",
+                          "columnType": "button",
+                          "horizontalAlignment": "LEFT",
+                          "borderRadius": "0px",
+                          "width": 150,
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "id": "customColumn1",
+                          "buttonLabelColor": "#FFFFFF",
+                          "verticalAlignment": "CENTER"
+                        }
+                      },
                       "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "textSize": "0.875rem",
@@ -478,14 +753,13 @@
                       "label": "Data",
                       "searchKey": "",
                       "version": 3,
-                      "enableClientSideSearch": true,
                       "parentId": "59rw5mx0bq",
                       "serverSidePaginationEnabled": true,
                       "isLoading": false,
                       "isVisibleCompactMode": true,
                       "onSearchTextChanged": "{{SelectQuery.run()}}",
                       "horizontalAlignment": "LEFT",
-                      "isVisibleSearch": false,
+                      "isVisibleSearch": true,
                       "childStylesheet": {
                         "button": {
                           "boxShadow": "none",
@@ -512,16 +786,40 @@
                         "deliveryAddress": 170,
                         "step": 62,
                         "id": 228,
-                        "status": 75,
-                        "sms": 132,
-                        "mc4": 354,
-                        "mc1": 149,
-                        "mc2": 109,
-                        "mc3": 151,
-                        "smsRegex": 337,
-                        "smsSender": 107,
-                        "smsRegexId": 60
+                        "status": 75
                       }
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text16",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "parentColumnSpace": 11.78515625,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "fontFamily": "System Default",
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "text": "bank_list Data",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 55,
+                      "textAlign": "LEFT",
+                      "widgetId": "urzv99hdc8",
+                      "isVisible": "true",
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "59rw5mx0bq",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
                       "labelTextSize": "0.875rem",
@@ -547,7 +845,7 @@
                         }
                       ],
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "leftColumn": 62,
+                      "leftColumn": 60,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -563,7 +861,7 @@
                       "labelTextSize": "0.875rem",
                       "boxShadow": "none",
                       "widgetName": "add_btn",
-                      "rightColumn": 62,
+                      "rightColumn": 59,
                       "onClick": "{{showModal('Insert_Modal')}}",
                       "iconName": "add",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -583,7 +881,7 @@
                         }
                       ],
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "leftColumn": 60,
+                      "leftColumn": 55,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -594,133 +892,6 @@
                       ],
                       "buttonVariant": "PRIMARY",
                       "isDisabled": false
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "smsSenderSelect",
-                      "isFilterable": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Select Sender",
-                      "searchTags": [
-                        "dropdown"
-                      ],
-                      "topRow": 1,
-                      "bottomRow": 5,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "",
-                      "animateLoading": true,
-                      "parentColumnSpace": 18.0029296875,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "leftColumn": 1,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "options"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "options": "{{distinct_smsid.data}}",
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "l6t4b44ccg",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 21,
-                      "widgetId": "fhbu1n3a3f",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "59rw5mx0bq",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{\n( function() {\tdistinct_regexid_for_sender.run()\n}\n)()\n\n}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "smsRegexIdSelect",
-                      "isFilterable": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Sms Regex Id",
-                      "searchTags": [
-                        "dropdown"
-                      ],
-                      "topRow": 1,
-                      "bottomRow": 5,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "{{distinct_regexid_for_sender.data[0]}}",
-                      "animateLoading": true,
-                      "parentColumnSpace": 19.123046875,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "leftColumn": 22,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "options"
-                        },
-                        {
-                          "key": "defaultOptionValue"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "options": "{{distinct_regexid_for_sender.data}}",
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "ajvop20pp7",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 42,
-                      "widgetId": "7zufljfd92",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "59rw5mx0bq",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{SelectQuery.run()}}"
                     }
                   ]
                 }
@@ -728,7 +899,7 @@
               "borderWidth": "0",
               "labelTextSize": "0.875rem",
               "backgroundColor": "#FFFFFF",
-              "rightColumn": 64,
+              "rightColumn": 39,
               "widgetId": "mvubsemxfo",
               "containerStyle": "card",
               "isVisible": "true",
@@ -1572,91 +1743,37 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 532
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "Text16",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "fontSize"
-                }
-              ],
-              "topRow": 3,
-              "bottomRow": 7,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "parentColumnSpace": 11.78515625,
-              "dynamicTriggerPathList": [],
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 1,
-              "dynamicBindingPathList": [],
-              "text": "Manage transaction description",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 24,
-              "textAlign": "LEFT",
-              "widgetId": "urzv99hdc8",
-              "isVisible": "true",
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "fontSize": "1.5rem"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Manage txn description_distinct_smsid",
-              "name": "distinct_smsid",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 50000
-            }
-          ],
-          [
-            {
-              "id": "Manage txn description_SelectQuery",
+              "id": "Page1_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
                 "data_table.sortOrder.column || 'id'",
-                "smsSenderSelect.selectedOptionValue || \"\"",
                 "data_table.sortOrder.order || \"ASC\"",
-                "smsRegexIdSelect.selectedOptionValue || 1"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Manage txn description_distinct_regexid_for_sender",
-              "name": "distinct_regexid_for_sender",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "smsSenderSelect.selectedOptionValue || \"\""
+                "data_table.pageSize",
+                "data_table.searchText || \"\"",
+                "(data_table.pageNo - 1) * data_table.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Manage txn description",
+        "id": "Page1",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": [],
-    "isHidden": false
+    "policies": []
   },
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_6328838abb192c5e18e19862"
+  "gitSyncId": "62fa7101b9a10a12666260f1_6358da723aef1358ea25f662"
 }
