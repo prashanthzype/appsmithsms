@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Parsed Sms",
+    "pageId": "parsed sms",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM nc_3vr7___parsedSms\nWHERE smsSender like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM nc_3vr7___parsedSms\nWHERE smsRegexId like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Parsed Sms_SelectQuery",
+  "id": "parsed sms_SelectQuery",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_636de1043aef1358ea25f685"
+  "gitSyncId": "62fa7101b9a10a12666260f1_636de25b3aef1358ea25f691"
 }

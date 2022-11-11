@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Parsed Sms",
+    "pageId": "parsed sms",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Parsed Sms_DeleteQuery",
+  "id": "parsed sms_DeleteQuery",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_636de1043aef1358ea25f684"
+  "gitSyncId": "62fa7101b9a10a12666260f1_636de25c3aef1358ea25f694"
 }

@@ -1,6 +1,6 @@
 {
   "unpublishedPage": {
-    "name": "Parsed Sms",
+    "name": "parsed sms",
     "slug": "parsed-sms",
     "layouts": [
       {
@@ -35,11 +35,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smsSender))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "IDFCFB",
+                      "sourceData": "ICICIB",
                       "isCustomField": false,
                       "accessor": "smsSender",
                       "identifier": "smsSender",
-                      "position": 0,
+                      "position": 1,
                       "originalIdentifier": "smsSender",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -57,11 +57,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.sms))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "Your A/C XXXXX079650 is debited by INR 21.00 on 30/04/22 15:28. Your new balance is INR 41959.00. To raise a dispute call us at 18004194332. We are now on WhatsApp! Experience everyday banking on WhatsApp now: idfcfir.st/WAEng Team IDFC FIRST Bank",
+                      "sourceData": "Dear Customer ICICI Bank Account XX425 is debited with INR 150.00 on 02-Feb-22. Info: BIL*INFT*0003. The Available Balance is INR 251237.96. Call 18002662 for dispute or SMS BLOCK 425 to 9215676766",
                       "isCustomField": false,
                       "accessor": "sms",
                       "identifier": "sms",
-                      "position": 1,
+                      "position": 2,
                       "originalIdentifier": "sms",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -79,11 +79,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smsRegex))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "Your A/C(.*)is debited by INR(.*)on(.*). Your new balance is INR(.*?)\\.(.*?)",
+                      "sourceData": "Dear Customer ICICI Bank Account(.*)is debited with INR(.*)on(.*). Info:(.*). The Available Balance is INR(.*)\\.(.*)",
                       "isCustomField": false,
                       "accessor": "smsRegex",
                       "identifier": "smsRegex",
-                      "position": 2,
+                      "position": 3,
                       "originalIdentifier": "smsRegex",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -92,7 +92,7 @@
                       "isDisabled": false,
                       "isRequired": false,
                       "isSpellCheck": false,
-                      "isVisible": true,
+                      "isVisible": false,
                       "labelTextSize": "0.875rem",
                       "label": "Sms Regex"
                     },
@@ -101,11 +101,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mc1))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": " XXXXX079650 ",
+                      "sourceData": " XX425 ",
                       "isCustomField": false,
                       "accessor": "mc1",
                       "identifier": "mc1",
-                      "position": 3,
+                      "position": 4,
                       "originalIdentifier": "mc1",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -123,11 +123,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mc2))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": " 21.00 ",
+                      "sourceData": " 150.00 ",
                       "isCustomField": false,
                       "accessor": "mc2",
                       "identifier": "mc2",
-                      "position": 4,
+                      "position": 5,
                       "originalIdentifier": "mc2",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -145,11 +145,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mc3))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": " 30/04/22 15:28",
+                      "sourceData": " 02-Feb-22",
                       "isCustomField": false,
                       "accessor": "mc3",
                       "identifier": "mc3",
-                      "position": 5,
+                      "position": 6,
                       "originalIdentifier": "mc3",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -167,11 +167,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mc4))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": " 41959",
+                      "sourceData": " BIL*INFT*0003",
                       "isCustomField": false,
                       "accessor": "mc4",
                       "identifier": "mc4",
-                      "position": 6,
+                      "position": 7,
                       "originalIdentifier": "mc4",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -189,11 +189,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mc5))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "",
+                      "sourceData": " 251237.96",
                       "isCustomField": false,
                       "accessor": "mc5",
                       "identifier": "mc5",
-                      "position": 7,
+                      "position": 8,
                       "originalIdentifier": "mc5",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -211,11 +211,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mc6))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "",
+                      "sourceData": " Call 18002662 for dispute or SMS BLOCK 425 to 9215676766",
                       "isCustomField": false,
                       "accessor": "mc6",
                       "identifier": "mc6",
-                      "position": 8,
+                      "position": 9,
                       "originalIdentifier": "mc6",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -237,7 +237,7 @@
                       "isCustomField": false,
                       "accessor": "mc7",
                       "identifier": "mc7",
-                      "position": 9,
+                      "position": 10,
                       "originalIdentifier": "mc7",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -259,7 +259,7 @@
                       "isCustomField": false,
                       "accessor": "mc8",
                       "identifier": "mc8",
-                      "position": 10,
+                      "position": 11,
                       "originalIdentifier": "mc8",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -277,11 +277,11 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.smsRegexId))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "4",
+                      "sourceData": "1",
                       "isCustomField": false,
                       "accessor": "smsRegexId",
                       "identifier": "smsRegexId",
-                      "position": 11,
+                      "position": 0,
                       "originalIdentifier": "smsRegexId",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -299,7 +299,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.created_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "2022-09-26T08:23:45Z",
+                      "sourceData": "2022-09-26T08:23:40Z",
                       "isCustomField": false,
                       "accessor": "created_at",
                       "identifier": "created_at",
@@ -312,7 +312,7 @@
                       "isDisabled": false,
                       "isRequired": false,
                       "isSpellCheck": false,
-                      "isVisible": true,
+                      "isVisible": false,
                       "labelTextSize": "0.875rem",
                       "label": "Created At"
                     },
@@ -321,7 +321,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.updated_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "2022-09-26T08:23:45Z",
+                      "sourceData": "2022-09-26T08:23:40Z",
                       "isCustomField": false,
                       "accessor": "updated_at",
                       "identifier": "updated_at",
@@ -334,7 +334,7 @@
                       "isDisabled": false,
                       "isRequired": false,
                       "isSpellCheck": false,
-                      "isVisible": true,
+                      "isVisible": false,
                       "labelTextSize": "0.875rem",
                       "label": "Updated At"
                     }
@@ -343,20 +343,20 @@
                   "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                   "fieldType": "Object",
                   "sourceData": {
-                    "smsSender": "IDFCFB",
-                    "sms": "Your A/C XXXXX079650 is debited by INR 21.00 on 30/04/22 15:28. Your new balance is INR 41959.00. To raise a dispute call us at 18004194332. We are now on WhatsApp! Experience everyday banking on WhatsApp now: idfcfir.st/WAEng Team IDFC FIRST Bank",
-                    "smsRegex": "Your A/C(.*)is debited by INR(.*)on(.*). Your new balance is INR(.*?)\\.(.*?)",
-                    "mc1": " XXXXX079650 ",
-                    "mc2": " 21.00 ",
-                    "mc3": " 30/04/22 15:28",
-                    "mc4": " 41959",
-                    "mc5": "",
-                    "mc6": "",
+                    "smsSender": "ICICIB",
+                    "sms": "Dear Customer ICICI Bank Account XX425 is debited with INR 150.00 on 02-Feb-22. Info: BIL*INFT*0003. The Available Balance is INR 251237.96. Call 18002662 for dispute or SMS BLOCK 425 to 9215676766",
+                    "smsRegex": "Dear Customer ICICI Bank Account(.*)is debited with INR(.*)on(.*). Info:(.*). The Available Balance is INR(.*)\\.(.*)",
+                    "mc1": " XX425 ",
+                    "mc2": " 150.00 ",
+                    "mc3": " 02-Feb-22",
+                    "mc4": " BIL*INFT*0003",
+                    "mc5": " 251237.96",
+                    "mc6": " Call 18002662 for dispute or SMS BLOCK 425 to 9215676766",
                     "mc7": "",
                     "mc8": "",
-                    "smsRegexId": "4",
-                    "created_at": "2022-09-26T08:23:45Z",
-                    "updated_at": "2022-09-26T08:23:45Z"
+                    "smsRegexId": "1",
+                    "created_at": "2022-09-26T08:23:40Z",
+                    "updated_at": "2022-09-26T08:23:40Z"
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -420,7 +420,7 @@
                   "key": "onSubmit"
                 }
               ],
-              "leftColumn": 39,
+              "leftColumn": 42,
               "dynamicBindingPathList": [
                 {
                   "key": "schema.__root_schema__.defaultValue"
@@ -743,9 +743,7 @@
                       "widgetName": "data_table",
                       "onSort": "{{SelectQuery.run()}}",
                       "columnOrder": [
-                        "id",
                         "smsSender",
-                        "smsRegexId",
                         "sms",
                         "smsRegex",
                         "mc1",
@@ -756,12 +754,18 @@
                         "mc6",
                         "mc7",
                         "mc8",
+                        "smsRegexId",
+                        "id",
                         "created_at",
-                        "updated_at"
+                        "updated_at",
+                        "customColumn1"
                       ],
                       "dynamicPropertyPathList": [
                         {
                           "key": "onPageChange"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.borderRadius"
                         }
                       ],
                       "isVisibleDownload": true,
@@ -779,6 +783,9 @@
                           "key": "onPageChange"
                         },
                         {
+                          "key": "primaryColumns.customColumn1.onClick"
+                        },
+                        {
                           "key": "onSearchTextChanged"
                         },
                         {
@@ -786,6 +793,9 @@
                         }
                       ],
                       "dynamicBindingPathList": [
+                        {
+                          "key": "primaryColumns.customColumn1.buttonLabel"
+                        },
                         {
                           "key": "tableData"
                         },
@@ -797,6 +807,9 @@
                         },
                         {
                           "key": "boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.borderRadius"
                         },
                         {
                           "key": "primaryColumns.smsSender.computedValue"
@@ -846,6 +859,29 @@
                       ],
                       "leftColumn": 0,
                       "primaryColumns": {
+                        "customColumn1": {
+                          "isCellVisible": true,
+                          "boxShadow": "none",
+                          "isDerived": true,
+                          "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.customColumn1))}}",
+                          "onClick": "{{showModal('Delete_Modal')}}",
+                          "textSize": "0.875rem",
+                          "buttonColor": "#DD4B34",
+                          "index": 7,
+                          "isVisible": true,
+                          "label": "Delete",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => { return 'Delete'})}}",
+                          "columnType": "button",
+                          "horizontalAlignment": "LEFT",
+                          "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                          "width": 150,
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "id": "customColumn1",
+                          "isDisabled": false,
+                          "buttonLabelColor": "#FFFFFF",
+                          "verticalAlignment": "CENTER"
+                        },
                         "smsSender": {
                           "index": 0,
                           "width": 150,
@@ -895,7 +931,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
@@ -1104,7 +1140,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
@@ -1123,7 +1159,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
@@ -1133,7 +1169,29 @@
                         }
                       },
                       "delimiter": ",",
-                      "derivedColumns": {},
+                      "derivedColumns": {
+                        "customColumn1": {
+                          "boxShadow": "none",
+                          "isDerived": true,
+                          "computedValue": "",
+                          "onClick": "{{DeleteQuery.run()}}",
+                          "textSize": "0.875rem",
+                          "buttonStyle": "#DD4B34",
+                          "index": 7,
+                          "isVisible": true,
+                          "label": "customColumn1",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => { return 'Delete'})}}",
+                          "columnType": "button",
+                          "horizontalAlignment": "LEFT",
+                          "borderRadius": "0px",
+                          "width": 150,
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "id": "customColumn1",
+                          "buttonLabelColor": "#FFFFFF",
+                          "verticalAlignment": "CENTER"
+                        }
+                      },
                       "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "textSize": "0.875rem",
@@ -1178,9 +1236,7 @@
                         "deliveryAddress": 170,
                         "step": 62,
                         "id": 228,
-                        "status": 75,
-                        "sms": 238,
-                        "smsRegexId": 85
+                        "status": 75
                       }
                     },
                     {
@@ -2143,7 +2199,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Parsed Sms_SelectQuery",
+              "id": "parsed sms_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2159,7 +2215,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Parsed Sms",
+        "id": "parsed sms",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -2170,5 +2226,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_636de0db3aef1358ea25f682"
+  "gitSyncId": "62fa7101b9a10a12666260f1_636de24c3aef1358ea25f68f"
 }

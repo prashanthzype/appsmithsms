@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Parsed Sms",
+    "pageId": "parsed sms",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO nc_3vr7___parsedSms (\n\tsmsSender,\n\tsms,\n\tsmsRegex,\n\tmc1,\n\tmc2,\n\tmc3,\n\tmc4,\n\tmc5,\n\tmc6,\n\tmc7,\n\tmc8\n)\nVALUES (\n\t'{{insert_form.formData.smsSender}}',\n\t'{{insert_form.formData.sms}}',\n\t'{{insert_form.formData.smsRegex}}',\n\t'{{insert_form.formData.mc1}}',\n\t'{{insert_form.formData.mc2}}',\n\t'{{insert_form.formData.mc3}}',\n\t'{{insert_form.formData.mc4}}',\n\t'{{insert_form.formData.mc5}}',\n\t'{{insert_form.formData.mc6}}',\n\t'{{insert_form.formData.mc7}}',\n\t'{{insert_form.formData.mc8}}'\n);",
+      "body": "INSERT INTO nc_3vr7___parsedSms (\n\tsmsRegexId,\n\tsmsSender,\n\tsms,\n\tsmsRegex,\n\tmc1,\n\tmc2,\n\tmc3,\n\tmc4,\n\tmc5,\n\tmc6,\n\tmc7\n)\nVALUES (\n\t'{{insert_form.formData.smsRegexId}}',\n\t'{{insert_form.formData.smsSender}}',\n\t'{{insert_form.formData.sms}}',\n\t'{{insert_form.formData.smsRegex}}',\n\t'{{insert_form.formData.mc1}}',\n\t'{{insert_form.formData.mc2}}',\n\t'{{insert_form.formData.mc3}}',\n\t'{{insert_form.formData.mc4}}',\n\t'{{insert_form.formData.mc5}}',\n\t'{{insert_form.formData.mc6}}',\n\t'{{insert_form.formData.mc7}}'\n);",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -37,9 +37,9 @@
       "insert_form.formData.mc5",
       "insert_form.formData.mc6",
       "insert_form.formData.mc7",
-      "insert_form.formData.mc8",
       "insert_form.formData.sms",
       "insert_form.formData.smsRegex",
+      "insert_form.formData.smsRegexId",
       "insert_form.formData.smsSender"
     ],
     "userSetOnLoad": false,
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Parsed Sms_InsertQuery",
+  "id": "parsed sms_InsertQuery",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_636de1043aef1358ea25f687"
+  "gitSyncId": "62fa7101b9a10a12666260f1_636de25c3aef1358ea25f693"
 }
