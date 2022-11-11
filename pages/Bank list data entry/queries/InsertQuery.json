@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Bank list data entry",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO bank_list (\n\tname_of_bank,\n\timg_url,\n\tcreated_date,\n\tupdated_date,\n\tcashfree_netbanking_code,\n\tcashfree_debitcard_code)\nVALUES (\n\t'{{insert_form.formData.name_of_bank}}',\n\t'{{insert_form.formData.img_url}}',\n\t'{{insert_form.formData.created_date}}',\n\t'{{insert_form.formData.updated_date}}',\n\t'{{insert_form.formData.cashfree_netbanking_code}}',\n\t'{{insert_form.formData.cashfree_debitcard_code}}');",
+      "body": "INSERT INTO bank_list (\n\tname_of_bank,\n\timg_url,\n\tcreated_date,\n\tupdated_date,\n\tcashfree_netbanking_code,\n\tcashfree_debitcard_code,\n\tcode)\nVALUES (\n\t'{{insert_form.formData.name_of_bank}}',\n\t'{{insert_form.formData.img_url}}',\n\t'{{insert_form.formData.created_date}}',\n\t'{{insert_form.formData.updated_date}}',\n\t'{{insert_form.formData.cashfree_netbanking_code}}',\n\t'{{insert_form.formData.cashfree_debitcard_code}}',\n\t'{{insert_form.formData.code}}');",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -32,6 +32,7 @@
     "jsonPathKeys": [
       "insert_form.formData.cashfree_debitcard_code",
       "insert_form.formData.cashfree_netbanking_code",
+      "insert_form.formData.code",
       "insert_form.formData.created_date",
       "insert_form.formData.img_url",
       "insert_form.formData.name_of_bank",
@@ -42,7 +43,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_InsertQuery",
+  "id": "Bank list data entry_InsertQuery",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_6358da853aef1358ea25f666"
+  "gitSyncId": "62fa7101b9a10a12666260f1_635ba51d3aef1358ea25f679"
 }

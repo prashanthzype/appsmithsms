@@ -41,7 +41,11 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "Bank list data entry",
+      "isDefault": false
+    },
+    {
+      "id": "Parsed Sms",
       "isDefault": false
     }
   ],

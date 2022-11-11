@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Bank list data entry",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE bank_list SET\n\t\tname_of_bank = '{{update_form.fieldState.name_of_bank.isVisible ? update_form.formData.name_of_bank : update_form.sourceData.name_of_bank}}',\n\t\timg_url = '{{update_form.fieldState.img_url.isVisible ? update_form.formData.img_url : update_form.sourceData.img_url}}',\n    created_date = '{{update_form.fieldState.created_date.isVisible ? update_form.formData.created_date : update_form.sourceData.created_date}}',\n\t\tupdated_date = '{{update_form.fieldState.updated_date.isVisible ? update_form.formData.updated_date : update_form.sourceData.updated_date}}',\n\t\tcashfree_netbanking_code = '{{update_form.fieldState.cashfree_netbanking_code.isVisible ? update_form.formData.cashfree_netbanking_code : update_form.sourceData.cashfree_netbanking_code}}',\n\t\tcashfree_debitcard_code = '{{update_form.fieldState.cashfree_debitcard_code.isVisible ? update_form.formData.cashfree_debitcard_code : update_form.sourceData.cashfree_debitcard_code}}'\nWHERE id = {{data_table.selectedRow.id}};",
+      "body": "UPDATE bank_list SET\n\t\tname_of_bank = '{{update_form.fieldState.name_of_bank.isVisible ? update_form.formData.name_of_bank : update_form.sourceData.name_of_bank}}',\n\t\timg_url = '{{update_form.fieldState.img_url.isVisible ? update_form.formData.img_url : update_form.sourceData.img_url}}',\n    created_date = '{{update_form.fieldState.created_date.isVisible ? update_form.formData.created_date : update_form.sourceData.created_date}}',\n\t\tupdated_date = '{{update_form.fieldState.updated_date.isVisible ? update_form.formData.updated_date : update_form.sourceData.updated_date}}',\n\t\tcashfree_netbanking_code = '{{update_form.fieldState.cashfree_netbanking_code.isVisible ? update_form.formData.cashfree_netbanking_code : update_form.sourceData.cashfree_netbanking_code}}',\n\t\tcashfree_debitcard_code = '{{update_form.fieldState.cashfree_debitcard_code.isVisible ? update_form.formData.cashfree_debitcard_code : update_form.sourceData.cashfree_debitcard_code}}',\n\t\tcode = '{{update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code}}'\nWHERE id = {{data_table.selectedRow.id}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -33,6 +33,7 @@
       "data_table.selectedRow.id",
       "update_form.fieldState.cashfree_debitcard_code.isVisible ? update_form.formData.cashfree_debitcard_code : update_form.sourceData.cashfree_debitcard_code",
       "update_form.fieldState.cashfree_netbanking_code.isVisible ? update_form.formData.cashfree_netbanking_code : update_form.sourceData.cashfree_netbanking_code",
+      "update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code",
       "update_form.fieldState.created_date.isVisible ? update_form.formData.created_date : update_form.sourceData.created_date",
       "update_form.fieldState.img_url.isVisible ? update_form.formData.img_url : update_form.sourceData.img_url",
       "update_form.fieldState.name_of_bank.isVisible ? update_form.formData.name_of_bank : update_form.sourceData.name_of_bank",
@@ -43,7 +44,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_UpdateQuery",
+  "id": "Bank list data entry_UpdateQuery",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_6358da853aef1358ea25f667"
+  "gitSyncId": "62fa7101b9a10a12666260f1_635ba51d3aef1358ea25f676"
 }

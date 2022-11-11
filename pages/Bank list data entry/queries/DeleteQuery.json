@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Bank list data entry",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_DeleteQuery",
+  "id": "Bank list data entry_DeleteQuery",
   "deleted": false,
-  "gitSyncId": "62fa7101b9a10a12666260f1_6358da853aef1358ea25f665"
+  "gitSyncId": "62fa7101b9a10a12666260f1_635ba51d3aef1358ea25f678"
 }
