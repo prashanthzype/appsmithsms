@@ -1457,7 +1457,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1210,
+                  "bottomRow": 1220,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1485,8 +1485,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 2,
-                      "bottomRow": 6,
+                      "topRow": 1,
+                      "bottomRow": 5,
                       "parentRowSpace": 10,
                       "labelWidth": "10",
                       "autoFocus": false,
@@ -1530,7 +1530,7 @@
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "widgetName": "Button3",
+                      "widgetName": "FindBySender",
                       "onClick": "{{senderLike.text.length > 3 ? fetch_raw_smses.run({ likeText: `%${senderLike.text}%`}) : showAlert('Type atlease 3 characters')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
@@ -1544,8 +1544,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 2,
-                      "bottomRow": 6,
+                      "topRow": 1,
+                      "bottomRow": 5,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1587,7 +1587,7 @@
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 8,
+                      "topRow": 9,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1734,7 +1734,7 @@
                         }
                       ],
                       "displayName": "Table",
-                      "bottomRow": 119,
+                      "bottomRow": 120,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -1934,6 +1934,115 @@
                       "isVisibleSearch": true,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "smsIdLike",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 5,
+                      "bottomRow": 9,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.7783203125,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "hiqnsed1ae",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 22,
+                      "widgetId": "btp4scb9nf",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Sms Id",
+                      "version": 2,
+                      "parentId": "825k9k7d7h",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "FindBySmsId",
+                      "onClick": "{{smsIdLike.text.length > 3 ? fetch_raw_smses_by_id.run({ likeText: `%${smsIdLike.text}%`}) : showAlert('Type atlease 3 characters')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 5,
+                      "bottomRow": 9,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.7783203125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 31,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Find",
+                      "isDisabled": false,
+                      "key": "h4q12fjhs6",
+                      "isDeprecated": false,
+                      "rightColumn": 47,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "9roj37povz",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "825k9k7d7h",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
                     }
                   ],
                   "key": "xuvxwvegnz",
