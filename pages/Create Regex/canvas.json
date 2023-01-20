@@ -1508,6 +1508,7 @@
                       "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
+                      "placeholderText": "Enter sms sender",
                       "isDisabled": false,
                       "key": "2vjdpw61s8",
                       "labelTextSize": "0.875rem",
@@ -1556,7 +1557,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 31,
+                      "leftColumn": 46,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1569,7 +1570,7 @@
                       "isDisabled": false,
                       "key": "6kx0u7r8bv",
                       "isDeprecated": false,
-                      "rightColumn": 47,
+                      "rightColumn": 62,
                       "isDefaultClickDisabled": true,
                       "widgetId": "94mbyfriql",
                       "isVisible": true,
@@ -1587,7 +1588,7 @@
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 9,
+                      "topRow": 12,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1925,7 +1926,7 @@
                       "rightColumn": 62,
                       "textSize": "0.875rem",
                       "widgetId": "bdykcy3ecj",
-                      "tableData": "{{fetch_raw_smses.data}}",
+                      "tableData": "{{fetch_raw_smses.data.length > 0 ? fetch_raw_smses.data : fetch_parsed_smses_by_id.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "825k9k7d7h",
@@ -1937,7 +1938,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "smsIdLike",
+                      "widgetName": "parsedSmsId",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1946,10 +1947,10 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 5,
-                      "bottomRow": 9,
+                      "topRow": 7,
+                      "bottomRow": 11,
                       "parentRowSpace": 10,
-                      "labelWidth": 5,
+                      "labelWidth": "15",
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
@@ -1970,15 +1971,15 @@
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
-                      "key": "hiqnsed1ae",
+                      "key": "pnelwxx3pu",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 22,
-                      "widgetId": "btp4scb9nf",
+                      "rightColumn": 42,
+                      "widgetId": "2bo87dklrh",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "label": "Sms Id",
+                      "label": "Parsed Sms Id",
                       "version": 2,
                       "parentId": "825k9k7d7h",
                       "labelAlignment": "left",
@@ -1991,8 +1992,8 @@
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "widgetName": "FindBySmsId",
-                      "onClick": "{{smsIdLike.text.length > 3 ? fetch_raw_smses_by_id.run({ likeText: `%${smsIdLike.text}%`}) : showAlert('Type atlease 3 characters')}}",
+                      "widgetName": "Button3",
+                      "onClick": "{{parsedSmsId.text.length > 3 ? fetch_parsed_smses_by_id.run({ likeText: `%${parsedSmsId.text}%`}) : showAlert('Type atlease 3 characters')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
@@ -2005,8 +2006,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 5,
-                      "bottomRow": 9,
+                      "topRow": 7,
+                      "bottomRow": 11,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -2017,7 +2018,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 31,
+                      "leftColumn": 45,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -2026,13 +2027,13 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Find",
+                      "text": "Submit",
                       "isDisabled": false,
-                      "key": "h4q12fjhs6",
+                      "key": "910hz29lti",
                       "isDeprecated": false,
-                      "rightColumn": 47,
+                      "rightColumn": 61,
                       "isDefaultClickDisabled": true,
-                      "widgetId": "9roj37povz",
+                      "widgetId": "q99d2x1m2o",
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
@@ -2116,6 +2117,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Create Regex_fetch_parsed_smses_by_id",
+              "name": "fetch_parsed_smses_by_id",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "parsedSmsId.text"
+              ],
               "timeoutInMillisecond": 10000
             }
           ],
